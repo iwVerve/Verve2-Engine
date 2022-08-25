@@ -116,6 +116,18 @@ function input_check_released(_input) {
 	}
 }
 
+function input_get_name(_input) {
+	return global.input_map[? _input].name;
+}
+
+function input_get_key(_input) {
+	return global.input_map[? _input].key;
+}
+
+function input_get_button(_input) {
+	return global.input_map[? _input].button;
+}
+
 function input_bind_key(_input, _key) {
 	global.input_map[? _input].key = _key;
 }
