@@ -1,0 +1,5 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: �f�B���N�g�� `c:/Users/Ondra/Documents/GitHub/Verve2-Engine/docs' �ɓ���܂�
+sphinx-build -M help "source" "build"  
+make.exe: �f�B���N�g�� `c:/Users/Ondra/Documents/GitHub/Verve2-Engine/docs' ����o�܂�
+ 
