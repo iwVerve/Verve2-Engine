@@ -1,0 +1,312 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# ����̓t���[�\�t�g�E�F�A�ł�. ���p�����ɂ��Ă̓\�[�X��
+# ������������.
+# ���Ɛ������̖ړI�ւ̓K�����̔@���Ɋւ�炸, ���ۏ؂ł�.
+
+# This program built for i386-pc-mingw32
+ 
+
+# Make �f�[�^�x�[�X�o�� Fri Aug 26 18:07:58 2022
+
+# �ϐ�
+
+# �����ϐ�
+<D = $(patsubst %/,%,$(dir $<))
+# �����ϐ�
+?F = $(notdir $?)
+# makefile �ϐ�
+MAKEFLAGS = Rrqp
+# �����ϐ�
+?D = $(patsubst %/,%,$(dir $?))
+# �����ϐ�
+@D = $(patsubst %/,%,$(dir $@))
+# ���ϐ�
+HOMEDRIVE = C:
+# �����ϐ�
+@F = $(notdir $@)
+# �����ϐ�
+^D = $(patsubst %/,%,$(dir $^))
+# makefile �ϐ�
+CURDIR := c:/Users/Ondra/Documents/GitHub/Verve2-Engine
+# �f�t�H���g
+SHELL := sh.exe
+# ���ϐ�
+WINDIR = C:\WINDOWS
+# ���ϐ�
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# ���ϐ�
+VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
+# ���ϐ�
+ONEDRIVE = C:\Users\Ondra\OneDrive
+# ���ϐ�
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+# makefile �ϐ�
+MAKEFILE_LIST := 
+# ���ϐ�
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# ���ϐ�
+CORONA_ROOT = C:\Program Files (x86)\Corona Labs\Corona\Native
+# ���ϐ�
+TMP = C:\Users\Ondra\AppData\Local\Temp
+# ���ϐ�
+PROGRAMW6432 = C:\Program Files
+# ���ϐ�
+PROGRAMDATA = C:\ProgramData
+# ���ϐ�
+VSCODE_CWD = C:\Users\Ondra\Documents\GitHub
+# ���ϐ�
+PATH = C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Oculus\Support\oculus-runtime;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Calibre2\;C:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Ondra\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\FAHClient;C:\Users\Ondra\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Ondra\AppData\Local\GitHubDesktop\bin;C:\Users\Ondra\.dotnet\tools;c:\ffmpeg;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\ProgramData\chocolatey\bin;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Go\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Users\Ondra\.cargo\bin;C:\Users\Ondra\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\FAHClient;C:\Users\Ondra\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Ondra\AppData\Local\GitHubDesktop\bin;C:\Users\Ondra\.dotnet\tools;C:\Users\Ondra\AppData\Local\Microsoft\WindowsApps;C:\Users\Ondra\AppData\Local\atom\bin;C:\Program Files\CMake\bin;C:\Users\Ondra\Desktop\Software\Other\yt-dlp;C:\Users\Ondra\AppData\Local\Programs\Julia-1.6.0\bin;C:\Users\Ondra\go\bin;C:\Users\Ondra\AppData\Roaming\npm;C:\Path;C:\Program Files (x86)\GnuWin32\bin;C:\Users\Ondra\.dotnet\tools
+# ���ϐ�
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# ���ϐ�
+CHOCOLATEYLASTPATHUPDATE = 132792225002882765
+# ���ϐ�
+PROCESSOR_ARCHITECTURE = x86
+# ���ϐ�
+USERPROFILE = C:\Users\Ondra
+# ���ϐ�
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# ���ϐ�
+ALLUSERSPROFILE = C:\ProgramData
+# ���ϐ�
+GOPATH = C:\Users\Ondra\go
+# ���ϐ�
+NUMBER_OF_PROCESSORS = 12
+# ���ϐ�
+ELECTRON_RUN_AS_NODE = 1
+# �f�t�H���g
+.FEATURES := target-specific order-only second-expansion else-if archives
+# ���ϐ�
+OCULUSBASE = C:\Program Files\Oculus\
+# �����ϐ�
+%F = $(notdir $%)
+# ���ϐ�
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_15344_MWXQEXONPTCBFXKW
+# ���ϐ�
+COMPUTERNAME = DESKTOP-6091CCC
+# ���ϐ�
+PROGRAMFILES = C:\Program Files (x86)
+# ���ϐ�
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# ���ϐ�
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# ���ϐ�
+USERNAME = Ondra
+# ���ϐ�
+PUBLIC = C:\Users\Public
+# ���ϐ�
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# ���ϐ�
+VSCODE_CODE_CACHE_PATH = C:\Users\Ondra\AppData\Roaming\Code\CachedData\e4503b30fc78200f846c62cf8091b76ff5547662
+# ���ϐ�
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# ���ϐ�
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# ���ϐ�
+LOGONSERVER = \\DESKTOP-6091CCC
+# ���ϐ�
+ONEDRIVECONSUMER = C:\Users\Ondra\OneDrive
+# ���ϐ�
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# ���ϐ�
+USERDOMAIN = DESKTOP-6091CCC
+# �f�t�H���g
+MAKE = $(MAKE_COMMAND)
+# �f�t�H���g
+MAKECMDGOALS := all
+# �f�t�H���g
+MAKE_VERSION := 3.81
+# makefile �ϐ�
+.DEFAULT_GOAL := 
+# ���ϐ�
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# �����ϐ�
+%D = $(patsubst %/,%,$(dir $%))
+# ���ϐ�
+LOCALAPPDATA = C:\Users\Ondra\AppData\Local
+# ���ϐ�
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# �f�t�H���g
+MAKE_COMMAND := make.exe
+# ���ϐ�
+PROCESSOR_ARCHITEW6432 = AMD64
+# �f�t�H���g
+.VARIABLES := 
+# �����ϐ�
+*F = $(notdir $*)
+# ���ϐ�
+PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 8 Stepping 2, AuthenticAMD
+# ���ϐ�
+OS = Windows_NT
+# ���ϐ�
+VSCODE_IPC_HOOK = \\.\pipe\54d2e2ae94936918d3a3c888f1cdfd57-1.70.2-main-sock
+# ���ϐ�
+HOMEPATH = \Users\Ondra
+# ���ϐ�
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# ���ϐ�
+PROMPT = $P$G
+# ���ϐ�
+MFLAGS = -Rrqp
+# �����ϐ�
+*D = $(patsubst %/,%,$(dir $*))
+# ���ϐ�
+SYSTEMROOT = C:\WINDOWS
+# �����ϐ�
++D = $(patsubst %/,%,$(dir $+))
+# �����ϐ�
++F = $(notdir $+)
+# ���ϐ�
+APPDATA = C:\Users\Ondra\AppData\Roaming
+# ���ϐ�
+TEMP = C:\Users\Ondra\AppData\Local\Temp
+# ���ϐ�
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# ���ϐ�
+CORONA_PATH = C:\Program Files (x86)\Corona Labs\Corona\
+# �f�t�H���g
+MAKEFILES := 
+# �����ϐ�
+<F = $(notdir $<)
+# ���ϐ�
+CORONA_SDK_PATH = C:\Program Files (x86)\Corona Labs\Corona\
+# ���ϐ�
+LC_ALL = C
+# �����ϐ�
+^F = $(notdir $^)
+# �f�t�H���g
+SUFFIXES := 
+# ���ϐ�
+SYSTEMDRIVE = C:
+# ���ϐ�
+SESSIONNAME = Console
+# ���ϐ�
+PROCESSOR_REVISION = 0802
+# ���ϐ�
+MAKELEVEL := 0
+# ���ϐ�
+LANG = C
+# ���ϐ�
+PROCESSOR_LEVEL = 23
+# ���ϐ�
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# ���ϐ�
+VSCODE_PID = 15344
+# ���ϐ�
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-6091CCC
+# �ϐ��Z�b�g�̃n�b�V���e�[�u���̏��:
+# Load=92/1024=9%, Rehash=0, Collisions=9/109=8%
+
+# Pattern-specific Variable Values
+
+# �p�^�[���w��ϐ��̒l�Ȃ�.
+
+# �f�B���N�g��
+
+# : ��Ԃ𒲂ׂ��܂���ł���.
+# C:\Users\Ondra\AppData\Local\Programs\Julia-1.6.0\bin (key C:/Users/Ondra/AppData/Local/Programs/Julia-1.6.0/bin, mtime 1652136794): 55 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Program Files\Common Files\Oracle\Java\javapath (key C:/Program Files/Common Files/Oracle/Java/javapath, mtime 1624304890): 6 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Program Files\Oculus\Support\oculus-runtime (key C:/Program Files/Oculus/Support/oculus-runtime, mtime 1651625056): 36 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Program Files\Go\bin (key C:/Program Files/Go/bin, mtime 1652719408): 4 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Program Files\Docker\Docker\resources\bin (key C:/Program Files/Docker/Docker/resources/bin, mtime 1610009755): 11 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Program Files (x86)\FAHClient (key C:/Program Files (x86)/FAHClient, mtime 1568368259): 99 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1607997141): 30 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1657835262): 156 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# . (key c:/Users/Ondra/Documents/GitHub/Verve2-Engine, mtime 1661530072): 9 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (key C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1650547071): 10 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\ProgramData\chocolatey\bin (key C:/ProgramData/chocolatey/bin, mtime 1634748900): 13 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Program Files\nodejs\ (key C:/Program Files/nodejs/, mtime 1654816270): 13 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Python310\ (key C:/Python310/, mtime 1658430792): 18 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Python310\Scripts\ (key C:/Python310/Scripts/, mtime 1658433669): 25 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Users\Ondra\AppData\Roaming\npm (key C:/Users/Ondra/AppData/Roaming/npm, mtime 1661461360): 12 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Users\Ondra\.dotnet\tools: ��Ԃ𒲂ׂ��܂���ł���.
+# C:\Windows\System32\OpenSSH\: ��Ԃ𒲂ׂ��܂���ł���.
+# C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1624294189): 5 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Users\Ondra\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/Ondra/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1660834241): 4 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Windows (key C:/Windows, mtime 1658100276): 121 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Users\Ondra\.cargo\bin (key C:/Users/Ondra/.cargo/bin, mtime 1655913886): 14 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Program Files (x86)\Calibre2\ (key C:/Program Files (x86)/Calibre2/, mtime 1570224134): 24 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Users\Ondra\AppData\Local\GitHubDesktop\bin (key C:/Users/Ondra/AppData/Local/GitHubDesktop/bin, mtime 1585346970): 4 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1659202381): 13 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Path (key C:/Path, mtime 1659109215): 8 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Users\Ondra\AppData\Local\Microsoft\WindowsApps (key C:/Users/Ondra/AppData/Local/Microsoft/WindowsApps, mtime 1660823749): 15 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin (key C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin, mtime 1570453719): 58 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\ProgramData\DockerDesktop\version-bin (key C:/ProgramData/DockerDesktop/version-bin, mtime 1610009780): 4 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# c:\ffmpeg (key c:/ffmpeg, mtime 1590411974): 5 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1661441701): 3065 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Users\Ondra\AppData\Local\atom\bin: ��Ԃ𒲂ׂ��܂���ł���.
+# C:\Users\Ondra\go\bin: ��Ԃ𒲂ׂ��܂���ł���.
+# C:\Program Files\CMake\bin (key C:/Program Files/CMake/bin, mtime 1647033705): 7 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Users\Ondra\Desktop\Software\Other\yt-dlp (key C:/Users/Ondra/Desktop/Software/Other/yt-dlp, mtime 1650019604): 6 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1650547107): 5 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+# C:\Program Files (x86)\GnuWin32\bin (key C:/Program Files (x86)/GnuWin32/bin, mtime 1659109729): 5 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C����.
+
+# 3860 �̃t�@�C��, 0 �̓K�p�s�\�t�@�C���� (37 �̃f�B���N�g����).
+
+# �Öك��[��
+
+# �Öك��[���Ȃ�.
+
+# �t�@�C��
+
+# �^�[�Q�b�g�ł͂���܂���:
+all:
+#  �R�}���h���C���^�[�Q�b�g.
+#  �Öك��[���̒T�����s���܂���.
+#  �t�@�C�������݂��܂���.
+#  �t�@�C���͍X�V����Ă��܂���.
+# �ϐ��Z�b�g�̃n�b�V���e�[�u���̏��:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# �^�[�Q�b�g�ł͂���܂���:
+.DEFAULT:
+#  �Öك��[���̒T���͍s���܂���ł���.
+#  �C���������`�F�b�N����邱�Ƃ͂���܂���.
+#  �t�@�C���͍X�V����Ă��܂���.
+
+# �^�[�Q�b�g�ł͂���܂���:
+makefile:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  �Öك��[���̒T�����s���܂���.
+#  �t�@�C�������݂��܂���.
+#  �t�@�C���͍X�V����Ă��܂�.
+#  �X�V�Ɏ��s���܂���.
+# �ϐ��Z�b�g�̃n�b�V���e�[�u���̏��:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# �^�[�Q�b�g�ł͂���܂���:
+.SUFFIXES:
+#  �Öك��[���̒T���͍s���܂���ł���.
+#  �C���������`�F�b�N����邱�Ƃ͂���܂���.
+#  �t�@�C���͍X�V����Ă��܂���.
+
+# �^�[�Q�b�g�ł͂���܂���:
+GNUmakefile:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  �Öك��[���̒T�����s���܂���.
+#  �t�@�C�������݂��܂���.
+#  �t�@�C���͍X�V����Ă��܂�.
+#  �X�V�Ɏ��s���܂���.
+# �ϐ��Z�b�g�̃n�b�V���e�[�u���̏��:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# �t�@�C���n�b�V���e�[�u���̏��:
+# Load=5/1024=0%, Rehash=0, Collisions=0/16=0%
+# VPATH �T���p�X
+
+# `vpath' �T���p�X�͂���܂���
+
+# ��ʂ� (`VPATH' �ϐ�) �T���p�X�Ȃ�.
+
+# # of strings in strcache: 0
+# # of strcache buffers: 0
+# strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
+# strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
+
+# Make �f�[�^�x�[�X�I�� Fri Aug 26 18:07:58 2022
+
+ 
+make.exe: *** �^�[�Q�b�g `all' �� make ���郋�[��������܂���.  ���~.
+
