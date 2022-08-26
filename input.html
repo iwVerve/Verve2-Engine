@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html  lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>The input module</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="prev" title="Verve2 Engine" href="index.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">Verve2 Engine</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#verve2-engine">verve2 engine</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 current">
+            
+              <a href="#" class="reference internal current">The input module</a>
+            
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#config" class="reference internal">Config</a></li>
+                
+                  <li class="toctree-l2"><a href="#functions" class="reference internal">Functions</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li>The input module</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="index.html"
+       title="previous chapter">← Verve2 Engine</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <div class="section" id="the-input-module">
+<h1>The input module<a class="headerlink" href="#the-input-module" title="Permalink to this heading">¶</a></h1>
+<p>The input module takes care of:</p>
+<ul class="simple">
+<li><p>Abstracting keyboard and gamepad input into one system.</p></li>
+<li><p>Rebinds for both input methods.</p></li>
+</ul>
+<p>For clarity, <strong>keys</strong> refer to keyboard keys, <strong>buttons</strong> refer to gamepad buttons, and <strong>inputs</strong> refer to the in-game controls that can check for both keys and controls.</p>
+<div class="section" id="config">
+<h2>Config<a class="headerlink" href="#config" title="Permalink to this heading">¶</a></h2>
+<dl class="js data">
+<dt class="sig sig-object js" id="global.input_file_path">
+<span class="sig-prename descclassname"><span class="n"><span class="pre">global</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">input_file_path</span></span></span><a class="headerlink" href="#global.input_file_path" title="Permalink to this definition">¶</a></dt>
+<dd><p><cite>&lt;string&gt;</cite> The name of the file to which and from which rebind data is saved.</p>
+</dd></dl>
+
+<dl class="js data">
+<dt class="sig sig-object js" id="global.input_map">
+<span class="sig-prename descclassname"><span class="n"><span class="pre">global</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">input_map</span></span></span><a class="headerlink" href="#global.input_map" title="Permalink to this definition">¶</a></dt>
+<dd><p><cite>&lt;map&lt;input_definition&gt;&gt;</cite> The map holding all available inputs used in the game.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this heading">¶</a></h2>
+<dl class="js data">
+<dt class="sig sig-object js" id="INPUT">
+<span class="sig-name descname"><span class="n"><span class="pre">INPUT</span></span></span><a class="headerlink" href="#INPUT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enum holding the names of every avaiable input.</p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="input_init">
+<span class="sig-name descname"><span class="n"><span class="pre">input_init</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#input_init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes the input module. Ran at game start, and includes the module config.</p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="input_cleanup">
+<span class="sig-name descname"><span class="n"><span class="pre">input_cleanup</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#input_cleanup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Destroys data structures used by the input module. Ran at game end.</p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="input_write">
+<span class="sig-name descname"><span class="n"><span class="pre">input_write</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#input_write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the rebind configuration to the config file.</p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="input_read">
+<span class="sig-name descname"><span class="n"><span class="pre">input_read</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#input_read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the rebind configuration from the config file.</p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="new-input_definition">
+<span class="sig-name descname"><span class="n"><span class="pre">new</span> <span class="pre">input_definition</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_button</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rebindable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#new-input_definition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constructor that returns a new input struct, used to define all available inputs in <a class="reference internal" href="#input_init" title="input_init"><code class="xref js js-func docutils literal notranslate"><span class="pre">input_init()</span></code></a></p>
+<p><strong>name</strong> <cite>&lt;string&gt;</cite> - Name of the input. Shown in the rebind screen.</p>
+<p><strong>key</strong> <cite>&lt;vk_*&gt; or ord(“A..Z”)</cite> - Default keyboard key.</p>
+<p><strong>button</strong> <cite>&lt;gp_*&gt;</cite> - Default gamepad button.</p>
+<p><strong>rebindable</strong> <cite>&lt;bool&gt;</cite> - Whether the key is shown in the rebind screen.</p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="input_check">
+<span class="sig-name descname"><span class="n"><span class="pre">input_check</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#input_check" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if an input is currently held.</p>
+<p><strong>input</strong> <cite>&lt;INPUT.*&gt;</cite> - Input to check.</p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="input_check_pressed">
+<span class="sig-name descname"><span class="n"><span class="pre">input_check_pressed</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#input_check_pressed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if an input has been pressed on this frame.</p>
+<p><strong>input</strong> <cite>&lt;INPUT.*&gt;</cite> - Input to check.</p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="input_check_released">
+<span class="sig-name descname"><span class="n"><span class="pre">input_check_released</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#input_check_released" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if an input has been released on this frame.</p>
+<p><strong>input</strong> <cite>&lt;INPUT.*&gt;</cite> - Input to check.</p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="input_get_name">
+<span class="sig-name descname"><span class="n"><span class="pre">input_get_name</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#input_get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the name of an input.</p>
+<p><strong>input</strong> <cite>&lt;INPUT.*&gt;</cite> - Input to get the name of.</p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="input_get_key">
+<span class="sig-name descname"><span class="n"><span class="pre">input_get_key</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#input_get_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the keyboard key of an input.</p>
+<p><strong>input</strong> <cite>&lt;INPUT.*&gt;</cite> - Input to get the keyboard key of.</p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="input_get_button">
+<span class="sig-name descname"><span class="n"><span class="pre">input_get_button</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#input_get_button" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the gamepad button of an input.</p>
+<p><strong>input</strong> <cite>&lt;INPUT.*&gt;</cite> - Input to get the gamepad button of.</p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="input_bind_key">
+<span class="sig-name descname"><span class="n"><span class="pre">input_bind_key</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#input_bind_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Binds an input to a new key.</p>
+<p><strong>input</strong> <cite>&lt;INPUT.*&gt;</cite> - Input to rebind.</p>
+<p><strong>key</strong> <cite>&lt;vk_*&gt; or ord(“A..Z”)</cite> - The new key for the input.</p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="input_bind_button">
+<span class="sig-name descname"><span class="n"><span class="pre">input_bind_button</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">button</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#input_bind_button" title="Permalink to this definition">¶</a></dt>
+<dd><p>Binds an input to a new button.</p>
+<p><strong>input</strong> <cite>&lt;INPUT.*&gt;</cite> - Input to rebind.</p>
+<p><strong>button</strong> <cite>&lt;gp_*&gt;</cite> - The new key for the button.</p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="input_default_keys">
+<span class="sig-name descname"><span class="n"><span class="pre">input_default_keys</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#input_default_keys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resets all keys to their default.</p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="input_default_buttons">
+<span class="sig-name descname"><span class="n"><span class="pre">input_default_buttons</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#input_default_buttons" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resets all buttons to their default.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="index.html"
+       title="previous chapter">← Verve2 Engine</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2022, Verve.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.1.1 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>
