@@ -1,9 +1,4 @@
 {
-  "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
-  },
-  "name": "tsAllTiles",
   "spriteId": {
     "name": "bAllTiles",
     "path": "sprites/bAllTiles/bAllTiles.yy",
@@ -14,9 +9,13 @@
   "tileyoff": 0,
   "tilehsep": 0,
   "tilevsep": 0,
+  "spriteNoExport": true,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
   "out_tilehborder": 2,
   "out_tilevborder": 2,
-  "spriteNoExport": true,
   "out_columns": 4,
   "tile_count": 16,
   "autoTileSets": [
@@ -295,10 +294,11 @@
     "TileSerialiseData": [],
   },
   "parent": {
-    "name": "Verve2 Engine",
-    "path": "Verve2 Engine.yyp",
+    "name": "Tiles",
+    "path": "folders/Level/Tiles.yy",
   },
   "resourceVersion": "1.0",
+  "name": "tsAllTiles",
   "tags": [],
   "resourceType": "GMTileSet",
 }
