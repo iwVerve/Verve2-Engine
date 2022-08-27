@@ -13,7 +13,7 @@ Config
 
 .. js:data:: global.input_file_path
 
-    `<string>` The name of the file to which and from which rebind data is saved. (binds.ini by default)
+    `<string>` The name of the file to which and from which rebind data is saved. (`binds.ini` by default)
 
 
 
