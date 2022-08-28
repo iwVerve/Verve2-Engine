@@ -3,32 +3,34 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>Input module</title>
+      <title>Input Module</title>
     
-          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+          <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="../_static/theme.css " type="text/css" />
       
       <!-- sphinx script_files -->
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="_static/doctools.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
 
       
       <!-- bundled in js (rollup iife) -->
-      <!-- <script src="_static/theme-vendors.js"></script> -->
-      <script src="_static/theme.js" defer></script>
+      <!-- <script src="../_static/theme-vendors.js"></script> -->
+      <script src="../_static/theme.js" defer></script>
     
-  <link rel="index" title="Index" href="genindex.html" />
-  <link rel="search" title="Search" href="search.html" />
-  <link rel="prev" title="Verve2 Engine" href="index.html" /> 
+  <link rel="author" title="About these documents" href="../about.html" />
+  <link rel="index" title="Index" href="../genindex.html" />
+  <link rel="search" title="Search" href="../search.html" />
+  <link rel="next" title="Save Module" href="save.html" />
+  <link rel="prev" title="Technical Documentation" href="../technical.html" /> 
   </head>
 
   <body>
     <div id="app">
     <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
-  <router-link to="index.html" class="home-link">
+  <router-link to="../index.html" class="home-link">
     
       <span class="site-name">Verve2 Engine</span>
     
@@ -57,7 +59,7 @@
           </navlinks><div id="searchbox" class="searchbox" role="search">
   <div class="caption"><span class="caption-text">Quick search</span>
     <div class="searchformwrapper">
-      <form class="search" action="search.html" method="get">
+      <form class="search" action="../search.html" method="get">
         <input type="text" name="q" />
         <input type="submit" value="Search" />
         <input type="hidden" name="check_keywords" value="yes" />
@@ -69,23 +71,33 @@
   
     <div class="sidebar-group">
       <p class="caption">
-        <span class="caption-text"><a href="index.html#verve2-engine">verve2 engine</a></span>
+        <span class="caption-text"><a href="../index.html#verve2-engine">verve2 engine</a></span>
       </p>
-      <ul class="current">
+      <ul class="">
         
-          <li class="toctree-l1 current">
+          <li class="toctree-l1 ">
             
-              <a href="#" class="reference internal current">Input module</a>
+              <a href="../gettingstarted.html" class="reference internal ">Getting Started</a>
             
 
             
-              <ul>
-                
-                  <li class="toctree-l2"><a href="#config" class="reference internal">Config</a></li>
-                
-                  <li class="toctree-l2"><a href="#functions" class="reference internal">Functions</a></li>
-                
-              </ul>
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="../about.html" class="reference internal ">About the Engine</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="../technical.html" class="reference internal ">Technical Documentation</a>
+            
+
             
           </li>
 
@@ -100,16 +112,22 @@
           <div class="body-header" role="navigation" aria-label="navigation">
   
   <ul class="breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
+    <li><a href="../index.html">Docs</a> &raquo;</li>
     
-    <li>Input module</li>
+      <li><a href="../technical.html">Technical Documentation</a> &raquo;</li>
+    
+    <li>Input Module</li>
   </ul>
   
 
   <ul class="page-nav">
   <li class="prev">
-    <a href="index.html"
-       title="previous chapter">← Verve2 Engine</a>
+    <a href="../technical.html"
+       title="previous chapter">← Technical Documentation</a>
+  </li>
+  <li class="next">
+    <a href="save.html"
+       title="next chapter">Save Module →</a>
   </li>
 </ul>
   
@@ -118,7 +136,7 @@
           <div class="content" role="main" v-pre>
             
   <div class="section" id="input-module">
-<h1>Input module<a class="headerlink" href="#input-module" title="Permalink to this heading">¶</a></h1>
+<h1>Input Module<a class="headerlink" href="#input-module" title="Permalink to this heading">¶</a></h1>
 <p>The input module takes care of:</p>
 <ul class="simple">
 <li><p>Abstracting keyboard and gamepad input into one system.</p></li>
@@ -140,14 +158,29 @@
 </dd></dl>
 
 </div>
-<div class="section" id="functions">
-<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this heading">¶</a></h2>
+<div class="section" id="globals">
+<h2>Globals<a class="headerlink" href="#globals" title="Permalink to this heading">¶</a></h2>
+<dl class="js data">
+<dt class="sig sig-object js" id="global.input_controller_mode">
+<span class="sig-prename descclassname"><span class="n"><span class="pre">global</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">input_controller_mode</span></span></span><a class="headerlink" href="#global.input_controller_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p><cite>&lt;bool&gt;</cite> Whether or not the current input method is a controller instead of a keyboard.</p>
+</dd></dl>
+
+<dl class="js data">
+<dt class="sig sig-object js" id="global.input_controller_index">
+<span class="sig-prename descclassname"><span class="n"><span class="pre">global</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">input_controller_index</span></span></span><a class="headerlink" href="#global.input_controller_index" title="Permalink to this definition">¶</a></dt>
+<dd><p><cite>&lt;real&gt;</cite> The index of the currently used controller.</p>
+</dd></dl>
+
 <dl class="js data">
 <dt class="sig sig-object js" id="INPUT">
 <span class="sig-name descname"><span class="n"><span class="pre">INPUT</span></span></span><a class="headerlink" href="#INPUT" title="Permalink to this definition">¶</a></dt>
 <dd><p>Enum holding the names of every avaiable input.</p>
 </dd></dl>
 
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this heading">¶</a></h2>
 <dl class="js function">
 <dt class="sig sig-object js" id="input_init">
 <span class="sig-name descname"><span class="n"><span class="pre">input_init</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#input_init" title="Permalink to this definition">¶</a></dt>
@@ -260,8 +293,12 @@
           <div class="page-nav">
             <div class="inner"><ul class="page-nav">
   <li class="prev">
-    <a href="index.html"
-       title="previous chapter">← Verve2 Engine</a>
+    <a href="../technical.html"
+       title="previous chapter">← Technical Documentation</a>
+  </li>
+  <li class="next">
+    <a href="save.html"
+       title="next chapter">Save Module →</a>
   </li>
 </ul><div class="footer" role="contentinfo">
       &#169; Copyright 2022, Verve.

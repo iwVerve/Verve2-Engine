@@ -3,4 +3,6 @@ Verve2 Engine
 
 .. toctree::
    
-   input
+   gettingstarted
+   about
+   technical

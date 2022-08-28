@@ -1,4 +1,4 @@
-Input module
+Input Module
 ============
 
 The input module takes care of:
@@ -7,6 +7,8 @@ The input module takes care of:
 * Rebinds for both input methods.
 
 For clarity, **keys** refer to keyboard keys, **buttons** refer to gamepad buttons, and **inputs** refer to the in-game controls that can check for both keys and controls.
+
+
 
 Config
 ------
@@ -23,14 +25,29 @@ Config
 
 
 
-Functions
----------
+Globals
+-------
+
+.. js:data:: global.input_controller_mode
+
+    `<bool>` Whether or not the current input method is a controller instead of a keyboard.
+
+
+
+.. js:data:: global.input_controller_index
+
+    `<real>` The index of the currently used controller.
+
+
 
 .. js:data:: INPUT
 
     Enum holding the names of every avaiable input.
 
 
+
+Functions
+---------
 
 .. js:function:: input_init()
 

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html  lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Save Module</title>
+    
+          <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="../_static/theme.css " type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="../_static/theme-vendors.js"></script> -->
+      <script src="../_static/theme.js" defer></script>
+    
+  <link rel="author" title="About these documents" href="../about.html" />
+  <link rel="index" title="Index" href="../genindex.html" />
+  <link rel="search" title="Search" href="../search.html" />
+  <link rel="prev" title="Input Module" href="input.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="../index.html" class="home-link">
+    
+      <span class="site-name">Verve2 Engine</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="../search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../index.html#verve2-engine">verve2 engine</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="../gettingstarted.html" class="reference internal ">Getting Started</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="../about.html" class="reference internal ">About the Engine</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="../technical.html" class="reference internal ">Technical Documentation</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      <li><a href="../technical.html">Technical Documentation</a> &raquo;</li>
+    
+    <li>Save Module</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="input.html"
+       title="previous chapter">← Input Module</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <div class="section" id="save-module">
+<h1>Save Module<a class="headerlink" href="#save-module" title="Permalink to this heading">¶</a></h1>
+<p>The save module takes care of:</p>
+<ul class="simple">
+<li><p>Holding save data.</p></li>
+<li><p>The action of game saving.</p></li>
+<li><p>Storing the save data on disk.</p></li>
+</ul>
+<div class="section" id="config">
+<h2>Config<a class="headerlink" href="#config" title="Permalink to this heading">¶</a></h2>
+<dl class="js data">
+<dt class="sig sig-object js" id="global.save_file_path">
+<span class="sig-prename descclassname"><span class="n"><span class="pre">global</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">save_file_path</span></span></span><a class="headerlink" href="#global.save_file_path" title="Permalink to this definition">¶</a></dt>
+<dd><p><cite>&lt;string&gt;</cite> The name of the file to which and from which save data is saved. (<cite>save.sav</cite> by default)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="globals">
+<h2>Globals<a class="headerlink" href="#globals" title="Permalink to this heading">¶</a></h2>
+<dl class="js data">
+<dt class="sig sig-object js" id="global.save_map">
+<span class="sig-prename descclassname"><span class="n"><span class="pre">global</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">save_map</span></span></span><a class="headerlink" href="#global.save_map" title="Permalink to this definition">¶</a></dt>
+<dd><p><cite>&lt;map&lt;any&gt;&gt;</cite> The map holding all save information.</p>
+</dd></dl>
+
+<dl class="js data">
+<dt class="sig sig-object js" id="global.save_sig">
+<span class="sig-prename descclassname"><span class="n"><span class="pre">global</span></span><span class="p"><span class="pre">.</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">save_sig</span></span></span><a class="headerlink" href="#global.save_sig" title="Permalink to this definition">¶</a></dt>
+<dd><p><cite>&lt;string&gt;</cite> The string used to designate which savefile is currently selected.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this heading">¶</a></h2>
+<dl class="js function">
+<dt class="sig sig-object js" id="save_init">
+<span class="sig-name descname"><span class="n"><span class="pre">save_init</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#save_init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes the save module. Ran at game start, and includes the module config.</p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="save_cleanup">
+<span class="sig-name descname"><span class="n"><span class="pre">save_cleanup</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#save_cleanup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Destroys data structures used by the save module. Ran at game end.</p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="save_get">
+<span class="sig-name descname"><span class="n"><span class="pre">save_get</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">default</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#save_get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a save value with the provided key. If that value doesn’t exist, default is returned (0 by default).</p>
+<p><strong>key</strong> <cite>&lt;string or real&gt;</cite></p>
+<p><strong>default</strong> <cite>&lt;any&gt;</cite></p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="save_set">
+<span class="sig-name descname"><span class="n"><span class="pre">save_set</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#save_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves a value under the provided key.</p>
+<p><strong>key</strong> <cite>&lt;string or real&gt;</cite></p>
+<p><strong>value</strong> <cite>&lt;any&gt;</cite></p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="save_default">
+<span class="sig-name descname"><span class="n"><span class="pre">save_default</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#save_default" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resets a savefile to its default, new game, state. If a savefile name isn’t provided, resets the current file.</p>
+<p><strong>name</strong> <cite>&lt;string&gt;</cite></p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="save_read">
+<span class="sig-name descname"><span class="n"><span class="pre">save_read</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#save_read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads save data from the save file on disk.</p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="save_write">
+<span class="sig-name descname"><span class="n"><span class="pre">save_write</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#save_write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stores save data in the save file on disk.</p>
+</dd></dl>
+
+<dl class="js function">
+<dt class="sig sig-object js" id="save_select">
+<span class="sig-name descname"><span class="n"><span class="pre">save_select</span></span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#save_select" title="Permalink to this definition">¶</a></dt>
+<dd><p>Selects a save with the provided name. This doesn’t actually load any data when used - the performance cost is negligible.</p>
+<p><strong>name</strong> <cite>&lt;string or real&gt;</cite> - Name of the save to select. If not a string, gets turned into one.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="input.html"
+       title="previous chapter">← Input Module</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2022, Verve.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.1.1 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>
