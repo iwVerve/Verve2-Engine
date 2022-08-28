@@ -37,5 +37,3 @@ func_get_input = player_get_input_default;
 func_jump = player_jump_default;
 func_release_jump = player_release_jump_default;
 func_land = player_land_default;
-
-p_gravity_direction(315);

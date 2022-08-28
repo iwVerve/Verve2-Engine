@@ -30,7 +30,9 @@ function save_default(_name = "") {
 	
 	var _key = ds_map_find_first(global.save_map);
 	while !is_undefined(_key) {
-		ds_map_delete(global.save_map, _key);
+		if string_pos(global.save_sig, _key) == 1 {
+			ds_map_delete(global.save_map, _key);
+		}
 		_key = ds_map_find_next(global.save_map, _key);
 	}
 	
